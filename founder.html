@@ -3,26 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Bob Burr - Founder of Beacon Momentum</title>
-    <meta name="description" content="The story of Bob Burr, the founder of Beacon Momentum. From Navy veteran to entrepreneur to mentor, this is the journey that built the Digital Grandpa philosophy.">
+    <title>About Bob Burr — Founder of Beacon Momentum</title>
+    <meta name="description" content="Bob Burr has been neurodivergent his entire life, raised a neurodivergent son to professional success, and has supported more than 1,200 neurodivergent individuals. This is the credential that can't be replicated.">
     <link rel="canonical" href="https://beaconmomentum.com/founder.html">
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://beaconmomentum.com/founder.html">
-    <meta property="og:title" content="About Bob Burr - Founder of Beacon Momentum">
-    <meta property="og:description" content="The story of Bob Burr, the founder of Beacon Momentum. From Navy veteran to entrepreneur to mentor, this is the journey that built the Digital Grandpa philosophy.">
+    <meta property="og:title" content="About Bob Burr — Founder of Beacon Momentum">
+    <meta property="og:description" content="Personally neurodivergent. Raised an ND child to professional success. 1,200+ direct interactions with neurodivergent individuals. And he built the technology to serve them at scale.">
     <meta property="og:image" content="https://beaconmomentum.com/images/bob-burr-portrait.jpg">
     <meta property="og:site_name" content="Beacon Momentum">
     
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://beaconmomentum.com/founder.html">
-    <meta property="twitter:title" content="About Bob Burr - Founder of Beacon Momentum">
-    <meta property="twitter:description" content="The story of Bob Burr, the founder of Beacon Momentum. From Navy veteran to entrepreneur to mentor, this is the journey that built the Digital Grandpa philosophy.">
+    <meta property="twitter:title" content="About Bob Burr — Founder of Beacon Momentum">
+    <meta property="twitter:description" content="The credential that can't be replicated: lived neurodivergent experience, 1,200+ ND interactions, and the infrastructure to serve them.">
     <meta property="twitter:image" content="https://beaconmomentum.com/images/bob-burr-portrait.jpg">
     
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        // Define the brand colors used throughout this page so the Tailwind Play CDN
+        // generates utility classes like bg-deep-navy / bg-beacon-gold / bg-parchment.
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'deep-navy': '#0F172A',
+                        'beacon-gold': '#F59E0B',
+                        'parchment': '#FBF7EF',
+                        'warm-gray': '#475569'
+                    }
+                }
+            }
+        };
+    </script>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <style>
         :root {
@@ -32,176 +48,17 @@
             --beacon-foreground: #020617; /* Slate 950 */
             --beacon-glass: rgba(255, 255, 255, 0.1);
             --beacon-border: rgba(255, 255, 255, 0.15);
+            --deep-navy: #0F172A;
+            --beacon-gold: #F59E0B;
+            --parchment: #FBF7EF;
+            --warm-gray: #475569;
+            --light-background: #F8FAFC;
         }
         .playfair { font-family: 'Space Grotesk', serif; }
         .inter { font-family: 'Inter', sans-serif; }
     </style>
 </head>
 <body class="inter" style="background-color: var(--light-background);">
-<!-- Black Friday Early Access Banner - V2 (Jarvis-optimized) -->
-<style>
-    .black-friday-banner {
-        background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 50%, #2563eb 100%);
-        color: white;
-        padding: 0.875rem 0;
-        text-align: center;
-        position: relative;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-        z-index: 1000;
-    }
-    
-    .black-friday-banner-content {
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 0 3rem 0 1rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 1rem;
-        flex-wrap: wrap;
-    }
-    
-    .black-friday-banner-text {
-        font-size: 1.05rem;
-        font-weight: 600;
-        letter-spacing: 0.3px;
-        line-height: 1.4;
-    }
-    
-    .black-friday-banner-text-mobile {
-        display: none;
-    }
-    
-    .black-friday-banner-cta {
-        background: #D4AF37;
-        color: #1A2B3D;
-        padding: 0.5rem 1.5rem;
-        border-radius: 0.5rem;
-        font-weight: 700;
-        text-decoration: none;
-        transition: all 0.3s ease;
-        box-shadow: 0 2px 4px rgba(0,0,0,0.2);
-        white-space: nowrap;
-    }
-    
-    .black-friday-banner-cta:hover {
-        background: #FFD700;
-        transform: translateY(-2px);
-        box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-    }
-    
-    .black-friday-banner-close {
-        position: absolute;
-        right: 0.5rem;
-        top: 50%;
-        transform: translateY(-50%);
-        background: rgba(255,255,255,0.2);
-        border: none;
-        color: white;
-        width: 2rem;
-        height: 2rem;
-        border-radius: 50%;
-        cursor: pointer;
-        font-size: 1.4rem;
-        line-height: 1;
-        transition: background 0.3s ease;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    .black-friday-banner-close:hover {
-        background: rgba(255,255,255,0.3);
-    }
-    
-    .black-friday-banner.hidden {
-        display: none;
-    }
-    
-    @media (max-width: 768px) {
-        .black-friday-banner {
-            padding: 0.75rem 0;
-        }
-        
-        .black-friday-banner-content {
-            padding: 0 2.5rem 0 0.75rem;
-            gap: 0.5rem;
-        }
-        
-        .black-friday-banner-text {
-            display: none;
-        }
-        
-        .black-friday-banner-text-mobile {
-            display: block;
-            font-size: 0.9rem;
-            font-weight: 600;
-        }
-        
-        .black-friday-banner-cta {
-            padding: 0.4rem 1rem;
-            font-size: 0.85rem;
-        }
-        
-        .black-friday-banner-close {
-            right: 0.25rem;
-            width: 1.75rem;
-            height: 1.75rem;
-            font-size: 1.2rem;
-        }
-    }
-</style>
-
-<div class="black-friday-banner" id="blackFridayBanner">
-    <div class="black-friday-banner-content">
-        <!-- Desktop version -->
-        <span class="black-friday-banner-text">
-            🌟 Founding Members: Pay Once, Never Again - Lifetime Access Through Year's End
-        </span>
-        <!-- Mobile version -->
-        <span class="black-friday-banner-text-mobile">
-            🌟 Founding Members - Lifetime Access
-        </span>
-        <a href="/founding-member.html?utm_source=banner&utm_medium=blackfriday&utm_campaign=lifetime2025" class="black-friday-banner-cta">
-            Claim Lifetime Access →
-        </a>
-    </div>
-    <button class="black-friday-banner-close" onclick="dismissBFBanner()" aria-label="Close banner">
-        ×
-    </button>
-</div>
-
-<script>
-    function dismissBFBanner() {
-        const banner = document.getElementById('blackFridayBanner');
-        if (banner) {
-            banner.classList.add('hidden');
-            // Store dismissal in localStorage for 24 hours
-            const dismissedUntil = Date.now() + (24 * 60 * 60 * 1000);
-            localStorage.setItem('blackFridayBannerDismissed', dismissedUntil.toString());
-        }
-    }
-    
-    // Check if banner was previously dismissed
-    window.addEventListener('DOMContentLoaded', function() {
-        const banner = document.getElementById('blackFridayBanner');
-        if (!banner) return;
-        
-        const dismissedUntil = localStorage.getItem('blackFridayBannerDismissed');
-        if (dismissedUntil && Date.now() < parseInt(dismissedUntil)) {
-            banner.classList.add('hidden');
-        }
-        
-        // Auto-remove banner after January 1, 2026 at 12:01 AM EST
-        const expiryDate = new Date('2026-01-01T00:01:00-05:00');
-        const now = new Date();
-        if (now > expiryDate) {
-            banner.classList.add('hidden');
-        }
-    });
-</script>
-
-
 
     <!-- Navigation -->
     <nav class="bg-white shadow-sm border-b">
@@ -216,11 +73,9 @@
                 </div>
                 <div class="hidden md:flex items-center space-x-6">
                     <a href="/" class="font-medium" style="color: var(--warm-gray);">Home</a>
-                    <a href="/founding-member.html" class="font-medium" style="color: var(--warm-gray);">Founding Member</a>
-                    <a href="/digital-grandpa.html" class="font-medium" style="color: var(--warm-gray);">Mentorship</a>
-                    <a href="/beacon-rise.html" class="font-medium" style="color: var(--warm-gray);">Beacon Rise</a>
-                    <a href="/beacon-launch.html" class="font-medium" style="color: var(--warm-gray);">Beacon Launch</a>
-                    <a href="/labs.html" class="font-medium" style="color: var(--warm-gray);">Beacon Labs</a>
+                    <a href="join.html" class="font-medium" style="color: var(--warm-gray);">Community</a>
+                    <a href="/beacon-academy.html" class="font-medium" style="color: var(--warm-gray);">Academy</a>
+                    <a href="https://beaconlabs.ai" class="font-medium" style="color: var(--warm-gray);">Labs</a>
                     <a href="founder.html" class="font-medium" style="color: #0F172A; font-weight: 600;">About Bob</a>
                     <a href="/contact.html" class="font-medium" style="color: var(--warm-gray);">Contact</a>
                 </div>
@@ -239,9 +94,9 @@
             <div class="rounded-full w-48 h-48 mx-auto mb-8 shadow-lg border-4" style="border-color: #F59E0B; background: linear-gradient(135deg, #0F172A, #F59E0B); display: flex; align-items: center; justify-content: center;">
                 <span class="text-6xl">👤</span>
             </div>
-            <h1 class="text-5xl md:text-6xl font-bold mb-4 playfair">Your Past Doesn't Define You. Your Next Move Does.</h1>
-            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">I'm Bob Burr. I'm a Navy veteran, a self-made millionaire, and a man who lost it all. Today, I'm a mentor for people who are ready to rebuild.</p>
-            <a href="#journey" class="bg-beacon-gold text-deep-navy px-8 py-4 rounded-lg font-semibold text-lg shadow-lg hover:bg-yellow-500 transition-colors">Learn My Story</a>
+            <h1 class="text-5xl md:text-6xl font-bold mb-4 playfair">The Credential That Cannot Be Replicated.</h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">I'm Bob Burr. I'm a Navy veteran and I'm neurodivergent — though the word didn't exist when I was growing up. I've spent a lifetime understanding how our brains actually work, and more than 1,200 successful interactions proving it.</p>
+            <a href="#journey" class="bg-beacon-gold text-deep-navy px-8 py-4 rounded-lg font-semibold text-lg shadow-lg hover:bg-yellow-500 transition-colors">Read My Story</a>
         </div>
     </section>
 
@@ -252,13 +107,13 @@
             <h2 class="text-4xl font-bold mb-12 playfair" style="color: var(--deep-red);">What I Believe</h2>
             <div class="max-w-4xl mx-auto grid md:grid-cols-3 gap-8 text-lg">
                 <div class="bg-white p-8 rounded-lg shadow-md">
-                    <p class="font-semibold text-xl" style="color: #0F172A;">Love first. Wisdom always. Your best interest at heart.</p>
+                    <p class="font-semibold text-xl" style="color: #0F172A;">Neurodivergence is a way of being, not a deficit. Your brain isn't broken — it's wired differently.</p>
                 </div>
                 <div class="bg-white p-8 rounded-lg shadow-md">
-                    <p class="font-semibold text-xl" style="color: #0F172A;">Mentorship is a conversation, not a curriculum.</p>
+                    <p class="font-semibold text-xl" style="color: #0F172A;">The right question isn't "what's wrong with you?" It's "how does your brain actually work?"</p>
                 </div>
                 <div class="bg-white p-8 rounded-lg shadow-md">
-                    <p class="font-semibold text-xl" style="color: #0F172A;">Your story is your strength.</p>
+                    <p class="font-semibold text-xl" style="color: #0F172A;">Structure beats willpower. We change the environment, not the person.</p>
                 </div>
             </div>
         </div>
@@ -289,44 +144,44 @@
                         </div>
                     </div>
 
-                    <!-- The Entrepreneur -->
+                    <!-- Raising a Neurodivergent Son -->
                     <div class="relative flex items-center">
                         <div class="w-1/2 pr-8 text-right">
                             <div class="absolute right-0 w-8 h-8 bg-beacon-gold rounded-full transform translate-x-1/2 border-4 border-white"></div>
                         </div>
                         <div class="w-1/2 pl-8">
-                            <h3 class="text-2xl font-bold playfair" style="color: #0F172A;">The Entrepreneur</h3>
-                            <p class="text-gray-700 mt-2">Building and losing fortunes, the lessons of risk and resilience.</p>
+                            <h3 class="text-2xl font-bold playfair" style="color: #0F172A;">Raising a Neurodivergent Son</h3>
+                            <p class="text-gray-700 mt-2">My son was diagnosed with Asperger's. We stopped trying to fix how his brain worked and started building structure around it. Today he is a lead wastewater operator.</p>
                         </div>
                     </div>
 
-                    <!-- Behind the Wire -->
+                    <!-- Grace House Ministry -->
                     <div class="relative flex items-center">
                         <div class="w-1/2 pr-8 text-right">
-                            <h3 class="text-2xl font-bold playfair" style="color: #0F172A;">Behind the Wire</h3>
-                            <p class="text-gray-700 mt-2">14 years of profound challenge and introspection.</p>
+                            <h3 class="text-2xl font-bold playfair" style="color: #0F172A;">Grace House Ministry</h3>
+                            <p class="text-gray-700 mt-2">Years of walking beside people whose minds work differently &mdash; more than 1,200 one-on-one interactions with neurodivergent adults and the families around them.</p>
                         </div>
                         <div class="w-1/2 pl-8">
                             <div class="absolute left-1/2 w-8 h-8 bg-beacon-gold rounded-full transform -translate-x-1/2 border-4 border-white"></div>
                         </div>
                     </div>
 
-                    <!-- The Rebuilding -->
+                    <!-- Writing It Down -->
                     <div class="relative flex items-center">
                         <div class="w-1/2 pr-8 text-right">
                             <div class="absolute right-0 w-8 h-8 bg-beacon-gold rounded-full transform translate-x-1/2 border-4 border-white"></div>
                         </div>
                         <div class="w-1/2 pl-8">
-                            <h3 class="text-2xl font-bold playfair" style="color: #0F172A;">The Rebuilding</h3>
-                            <p class="text-gray-700 mt-2">The journey back, finding a new purpose.</p>
+                            <h3 class="text-2xl font-bold playfair" style="color: #0F172A;">Writing It Down</h3>
+                            <p class="text-gray-700 mt-2">59 books documenting the systems, language, and scaffolding that actually help &mdash; so the knowledge would outlast any one conversation.</p>
                         </div>
                     </div>
 
-                    <!-- The Mentor -->
+                    <!-- Building Beacon -->
                     <div class="relative flex items-center">
                         <div class="w-1/2 pr-8 text-right">
-                            <h3 class="text-2xl font-bold playfair" style="color: #0F172A;">The Mentor</h3>
-                            <p class="text-gray-700 mt-2">The birth of Digital Grandpa and Beacon Momentum.</p>
+                            <h3 class="text-2xl font-bold playfair" style="color: #0F172A;">Building Beacon Momentum</h3>
+                            <p class="text-gray-700 mt-2">Turning 1,200+ interactions into steady systems anyone can use: one front door, three routes &mdash; Community, Academy, and Labs.</p>
                         </div>
                         <div class="w-1/2 pl-8">
                             <div class="absolute left-1/2 w-8 h-8 bg-beacon-gold rounded-full transform -translate-x-1/2 border-4 border-white"></div>
@@ -353,11 +208,11 @@
                 </div>
                 <div class="text-center">
                     <p class="text-5xl font-bold" style="color: #0F172A;">✓</p>
-                    <p class="mt-2 font-semibold">Self-Made Millionaire (Multiple Times)</p>
+                    <p class="mt-2 font-semibold">Raised a neurodivergent son to professional independence</p>
                 </div>
                 <div class="text-center">
                     <p class="text-5xl font-bold" style="color: #0F172A;">✓</p>
-                    <p class="mt-2 font-semibold">25+ Years Mentoring people in transition</p>
+                    <p class="mt-2 font-semibold">1,200+ one-on-one interactions with neurodivergent adults</p>
                 </div>
             </div>
         </div>
@@ -370,16 +225,16 @@
             <h2 class="text-4xl font-bold mb-12 playfair" style="color: #0F172A;">Values I Live By</h2>
             <div class="max-w-5xl mx-auto grid md:grid-cols-3 gap-8">
                 <div class="text-center">
-                    <p class="text-3xl font-bold mb-4" style="color: #F59E0B;">Responsibility</p>
-                    <p class="text-lg text-gray-700">Own your choices, your mistakes, and your future.</p>
+                    <p class="text-3xl font-bold mb-4" style="color: #F59E0B;">Curiosity</p>
+                    <p class="text-lg text-gray-700">The first question is never "what's wrong with you?" It's "how does your brain work?"</p>
                 </div>
                 <div class="text-center">
-                    <p class="text-3xl font-bold mb-4" style="color: #F59E0B;">Resilience</p>
-                    <p class="text-lg text-gray-700">The ability to rise again is more valuable than never falling.</p>
+                    <p class="text-3xl font-bold mb-4" style="color: #F59E0B;">Structure</p>
+                    <p class="text-lg text-gray-700">Structure beats willpower. The right scaffolding does what trying harder never could.</p>
                 </div>
                 <div class="text-center">
-                    <p class="text-3xl font-bold mb-4" style="color: #F59E0B;">Service</p>
-                    <p class="text-lg text-gray-700">True strength is using what you've learned to help others.</p>
+                    <p class="text-3xl font-bold mb-4" style="color: #F59E0B;">Honesty</p>
+                    <p class="text-lg text-gray-700">Plain language, no hype. We name what works, what doesn't, and what we're still figuring out.</p>
                 </div>
             </div>
         </div>
@@ -390,7 +245,7 @@
         <div class="container mx-auto px-4 text-center">
             <h2 class="text-4xl font-bold mb-8 playfair" style="color: var(--deep-red);">Why I Built This Place</h2>
             <div class="max-w-3xl mx-auto text-xl text-gray-700 leading-relaxed">
-                <p class="mb-6">I built the place I wish I had when I was at my lowest. A place for people who don't need a savior, but a guide. A community built on shared experience, not just shared identity.</p>
+                <p class="mb-6">I built the place I wish my family had earlier &mdash; somewhere a neurodivergent person isn't treated as a problem to fix, but as a mind to understand and build around. Not a savior, a guide. Not a cure, a system.</p>
                 <p>This is Beacon Momentum. This is the work of my life.</p>
             </div>
         </div>
@@ -402,25 +257,25 @@
         <div class="container mx-auto px-4 text-center">
             <h2 class="text-4xl font-bold mb-12 playfair">Your Next Move</h2>
             <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-8">
-                <!-- Beacon Rise -->
+                <!-- Community -->
                 <div class="bg-gray-800 p-8 rounded-lg">
-                    <h3 class="text-2xl font-bold mb-4 playfair" style="color: #F59E0B;">for the person in Transition</h3>
-                    <p class="mb-6">If you're rebuilding from the ground up, Beacon Rise is your path. It's the structured journey I wish I had.</p>
-                    <a href="/beacon-rise.html" class="font-semibold text-beacon-gold hover:text-yellow-300">Explore Beacon Rise &rarr;</a>
+                    <h3 class="text-2xl font-bold mb-4 playfair" style="color: #F59E0B;">Community</h3>
+                    <p class="mb-6">A steady place to belong, with people who get it. Shared systems, honest conversation, and scaffolding you can use this week.</p>
+                    <a href="join.html" class="font-semibold text-beacon-gold hover:text-yellow-300">Join the Community — $247/yr &rarr;</a>
                 </div>
 
-                <!-- Beacon Launch -->
+                <!-- Academy -->
                 <div class="bg-gray-800 p-8 rounded-lg">
-                    <h3 class="text-2xl font-bold mb-4 playfair" style="color: #F59E0B;">For the Builder</h3>
-                    <p class="mb-6">If you're ready to build your own table, the Beacon Launch is your toolkit. These are the lessons I learned the hard way.</p>
-                    <a href="/beacon-launch.html" class="font-semibold text-beacon-gold hover:text-yellow-300">Explore the Beacon Launch &rarr;</a>
+                    <h3 class="text-2xl font-bold mb-4 playfair" style="color: #F59E0B;">Academy</h3>
+                    <p class="mb-6">Structured learning at your own pace &mdash; the language, tools, and systems that compensate without pathologizing.</p>
+                    <a href="/beacon-academy.html" class="font-semibold text-beacon-gold hover:text-yellow-300">Explore the Academy &rarr;</a>
                 </div>
 
-                <!-- Digital Grandpa Mentorship -->
+                <!-- Labs -->
                 <div class="bg-gray-800 p-8 rounded-lg">
-                    <h3 class="text-2xl font-bold mb-4 playfair" style="color: #F59E0B;">For the Leader Seeking Wisdom</h3>
-                    <p class="mb-6">If you need a steady hand for life's storms, Digital Grandpa Mentorship is our conversation. It's the mentorship I offer today.</p>
-                    <a href="/digital-grandpa.html" class="font-semibold text-beacon-gold hover:text-yellow-300">Explore Mentorship &rarr;</a>
+                    <h3 class="text-2xl font-bold mb-4 playfair" style="color: #F59E0B;">Labs</h3>
+                    <p class="mb-6">Where the systems get built. Practical tools designed with neurodivergent minds, not retrofitted for them.</p>
+                    <a href="https://beaconlabs.ai" class="font-semibold text-beacon-gold hover:text-yellow-300">Explore Labs &rarr;</a>
                 </div>
             </div>
         </div>
@@ -431,7 +286,7 @@
         <div class="container mx-auto px-4">
             <div class="max-w-3xl mx-auto bg-parchment p-8 rounded-lg border-l-4" style="border-color: #F59E0B;">
                 <h3 class="text-2xl font-bold mb-4 playfair" style="color: #0F172A;">A Personal Note From Me</h3>
-                <p class="text-lg text-gray-700 leading-relaxed">If you and I ever sit down together, I won't judge your past, and I won't tell you what to be. I'll simply walk with you as you shape the person you want to become. If that's what you're looking for, you're in the right place.</p>
+                <p class="text-lg text-gray-700 leading-relaxed">If you and I ever sit down together, I won't ask you to mask, and I won't tell you what's wrong with you. I'll ask how your brain works, and we'll build the structure that fits it. If that's what you're looking for, you're in the right place.</p>
             </div>
         </div>
     </section>
@@ -439,7 +294,7 @@
     <!-- Closing Section -->
     <section class="bg-parchment py-20">
         <div class="container mx-auto px-4 text-center">
-            <p class="text-3xl font-bold playfair italic" style="color: var(--deep-red);">"Your future self is waiting. Let's get to work."</p>
+            <p class="text-3xl font-bold playfair italic" style="color: var(--deep-red);">"Steady systems for neurodivergent lives. Let's build yours."</p>
             <p class="text-2xl mt-4 font-semibold">- Bob Burr</p>
         </div>
     </section>
@@ -450,16 +305,15 @@
             <div class="grid md:grid-cols-3 gap-8 mb-8">
                 <div>
                     <h3 class="text-xl font-bold mb-4 playfair" style="color: #F59E0B;">Beacon Momentum</h3>
-                    <p class="text-gray-300">Lighting the way forward through education, empowerment, and community.</p>
+                    <p class="text-gray-300">Steady systems for neurodivergent lives. One front door, three routes.</p>
                 </div>
                 <div>
-                    <h3 class="text-xl font-bold mb-4 playfair" style="color: #F59E0B;">Our Programs</h3>
+                    <h3 class="text-xl font-bold mb-4 playfair" style="color: #F59E0B;">Three Routes</h3>
                     <ul class="space-y-2 text-gray-300">
-                        <li><a href="/founding-member.html" class="hover:text-white">Founding Member</a></li>
-                        <li><a href="/digital-grandpa.html" class="hover:text-white">Mentorship</a></li>
-                        <li><a href="/beacon-rise.html" class="hover:text-white">Beacon Rise</a></li>
-                        <li><a href="/beacon-launch.html" class="hover:text-white">Beacon Launch</a></li>
-                        <li><a href="/labs.html" class="hover:text-white">Beacon Labs</a></li>
+                        <li><a href="join.html" class="hover:text-white">Community</a></li>
+                        <li><a href="/beacon-academy.html" class="hover:text-white">Academy</a></li>
+                        <li><a href="https://beaconlabs.ai" class="hover:text-white">Labs</a></li>
+                        <li><a href="/founder.html" class="hover:text-white">About Bob</a></li>
                     </ul>
                 </div>
                 <div>
@@ -474,7 +328,7 @@
                 </div>
             </div>
             <div class="border-t border-gray-700 pt-8 text-center text-gray-400">
-                <p>&copy; 2025 Beacon Momentum. All rights reserved. | Built by <a href="/labs.html" class="hover:text-white" style="color: #F59E0B;">Beacon Labs</a></p>
+                <p>&copy; 2026 Beacon Momentum. All rights reserved. | Built by <a href="/labs.html" class="hover:text-white" style="color: #F59E0B;">Beacon Labs</a></p>
                 <p class="mt-2"><a href="terms-of-service.html" class="hover:text-white">Terms of Service</a> | <a href="privacy-policy.html" class="hover:text-white">Privacy Policy</a> | <a href="refund-policy.html" class="hover:text-white">Refund Policy</a> | <a href="accessibility.html" class="hover:text-white">Accessibility</a> | <a href="cookie-policy.html" class="hover:text-white">Cookie Policy</a> | <a href="disclaimer.html" class="hover:text-white">Disclaimer</a> | <a href="gdpr-ccpa.html" class="hover:text-white">GDPR/CCPA</a></p>
             </div>
         </div>
