@@ -1,45 +1,31 @@
-# Operating System Files
-.DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
-Thumbs.db
-*~
+# Environment variables — NEVER commit these
+.env
+.env.local
+.env.production
+.env.staging
+*.env
 
-# Editor Files
+# Secrets and credentials
+secrets/
+credentials/
+*_token.txt
+*_key.txt
+
+# Node
+node_modules/
+.npm/
+
+# Build outputs
+dist/
+build/
+.next/
+.nuxt/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor
 .vscode/
 .idea/
 *.swp
-*.swo
-*.swn
-.sublime-project
-.sublime-workspace
-
-# Temporary Files
-*.tmp
-*.temp
-*.log
-*.cache
-
-# Backup Files
-*.bak
-*.backup
-*_backup_*
-
-# Node modules (if ever needed)
-node_modules/
-npm-debug.log
-yarn-error.log
-
-# Build artifacts
-dist/
-build/
-.cache/
-
-# Environment variables
-.env
-.env.local
-.env.*.local
-
